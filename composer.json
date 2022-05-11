@@ -1,0 +1,8 @@
+{
+    "name": "cityscanner7/server-side-practice",
+    "description": "finally doing it",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {}
+}
