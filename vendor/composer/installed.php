@@ -200,7 +200,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/console',
             'aliases' => array(),
-            'reference' => 'efb04c650ab51c04d537edc41924e16cc98bd636',
+            'reference' => 'd8c41c2e2836988a63c10cfb3556fca464b86df4',
             'dev_requirement' => false,
         ),
         'symfony/deprecation-contracts' => array(
@@ -286,7 +286,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/string',
             'aliases' => array(),
-            'reference' => '360e14d2a1588eb525b09898ff37d63509748db5',
+            'reference' => 'd3edc75baf9f1d4f94879764dda2e1ac33499529',
             'dev_requirement' => false,
         ),
         'symfony/translation' => array(
@@ -295,7 +295,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/translation',
             'aliases' => array(),
-            'reference' => 'f5d9b6dadad93f6d7753703a08680e99dc7e260d',
+            'reference' => 'b254416631615bc6fe49b0a67f18658827288147',
             'dev_requirement' => false,
         ),
         'symfony/translation-contracts' => array(
