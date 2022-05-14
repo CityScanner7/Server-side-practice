@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
 }
+
+html, body {
+    height: 100%;
+}
+/*------Main------*/
+
 .headerdiv {
     display: flex;
     flex-direction: column;
@@ -21,8 +27,17 @@
     border-color: #B4B4B4;
     border-width: 5px;
     width: auto;
-    height: 175px;
+    height: 120px;
     background-color: #84AD8F;
+    margin-top: -120px;
+}
+
+main {
+    padding-bottom: 120px;
+}
+
+.wrapper {
+    min-height: 100%;
 }
 
 .headertextwhite {
@@ -36,8 +51,113 @@
     color: #ffffff;
     text-decoration: none;
     font-family: Calibri;
+    font-size: 22px;
+    background-color: #c4c4c4;
+    padding: 5px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 7px;
 }
 
-.bruh {
-    margin-right: 1450px;
+.textwhitebig {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 30px;
+    margin-bottom: 5px;
 }
+
+.bruhdisc {
+    margin-right: 1245px;
+}
+
+.bruhlogin {
+    margin-right: 20px;
+}
+
+.bruhdisc {
+    margin-left: 20px;
+}
+
+.bruhwork {
+    margin-left: 20px;
+}
+
+.bruhexit {
+    margin-left: 64px;
+}
+
+.contacttable {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactinfo {
+    display: flex;
+    justify-content: center;
+}
+
+/*------End of Main------*/
+
+/*------Login------*/
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.logintext {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldpassword {
+    width: 350px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.fieldname {
+    width: 350px;
+}
+
+.fieldlogin {
+    width: 350px;
+}
+
+button {
+    width: 350px;
+}
+
+/*------End of Login------*/
+
+/*------Sign Up------*/
+
+.signup {
+    display: flex;
+    justify-content: center;
+}
+
+.signuptext {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.lol {
+    margin-top: 15px;
+}
+
+.stop {
+    margin-bottom: 0;
+}
+
+/*------End of Sign Up------*/
