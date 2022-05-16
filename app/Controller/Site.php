@@ -6,7 +6,9 @@ use Model\Post;
 use Src\View;
 use Src\Request;
 use Model\User;
+use Model\Workers;
 use Src\Auth\Auth;
+use Illuminate\Database\Capsule\Manager as DB;
 
 class Site
 {
@@ -47,6 +49,17 @@ class Site
     {
         Auth::logout();
         app()->route->redirect('/hello');
+    }
+    public function newworker (Request $request): string
+    {
+        if ($request->method === 'POST' && Workers::create($request->all())) {
+            app()->route->redirect('/hello');
+        }
+        return new View('site.newworker',['worker' => DB::table('workers')->get()]);
+    }
+    public function worker()
+    {
+        return (new View())->render('site.worker', ['worker' => DB::table('workers')->get()]);
     }
 
 }

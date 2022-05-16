@@ -6,6 +6,7 @@
 html, body {
     height: 100%;
 }
+
 /*------Main------*/
 
 .headerdiv {
@@ -68,15 +69,12 @@ main {
 }
 
 .bruhdisc {
-    margin-right: 1245px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .bruhlogin {
     margin-right: 20px;
-}
-
-.bruhdisc {
-    margin-left: 20px;
 }
 
 .bruhwork {
@@ -84,7 +82,11 @@ main {
 }
 
 .bruhexit {
-    margin-left: 64px;
+    margin-left: 20px;
+}
+
+.bruhdisc + a {
+    margin-left: 1100px;
 }
 
 .contacttable {
