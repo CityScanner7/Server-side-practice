@@ -5,16 +5,12 @@ namespace Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Workers extends Model
+class Units extends Model
 {
     use HasFactory;
     public $timestamps = false;
     protected $fillable = [
-        'FULLNAME',
-        'SEX',
-        'BIRTHDAY',
-        'PROFESSION',
-        'ID_UNIT',
-        'ID_DISCIPLINE'
+        'NAME',
+        'TYPE'
     ];
 }

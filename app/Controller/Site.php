@@ -55,11 +55,19 @@ class Site
         if ($request->method === 'POST' && Workers::create($request->all())) {
             app()->route->redirect('/hello');
         }
-        return new View('site.newworker',['worker' => DB::table('workers')->get()]);
+        return new View('site.newworker',['workers' => DB::table('workers')->get()]);
     }
-    public function worker()
+    public function workers()
     {
-        return (new View())->render('site.worker', ['worker' => DB::table('workers')->get()]);
+        return (new View())->render('site.worker', ['workers' => DB::table('workers')->get()]);
+    }
+    public function units()
+    {
+        return (new View())->render('site.newworker', ['units' => DB::table('units')->get()]);
+    }
+    public function disciplines()
+    {
+        return (new View())->render('site.disciplines', ['disciplines' => DB::table('disciplines')->get()]);
     }
 
 }

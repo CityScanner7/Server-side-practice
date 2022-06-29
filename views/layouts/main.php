@@ -15,7 +15,7 @@
         <div class="headerdiv">
             <nav>
                 <a class="headertextwhite" href="<?= app()->route->getUrl('/hello') ?>">Главная</a>
-                <a class="headertextwhite bruhwork" href="<?= app()->route->getUrl('/worker') ?>">Сотрудники</a>
+                <a class="headertextwhite bruhwork" href="<?= app()->route->getUrl('/workers') ?>">Сотрудники</a>
                 <a class="headertextwhite bruhdisc" href="<?= app()->route->getUrl('/disciplines') ?>">Дисциплины</a>
                 <?php
                 if (!app()->auth::check()):
